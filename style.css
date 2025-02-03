@@ -1,0 +1,134 @@
+body
+{background-color: rgb(59, 156, 59);
+    margin: 0;
+    
+    
+    } 
+    
+/* Hero Section */
+
+
+#hero {
+    background-image: url(images/bg.jpg);
+    width: auto;
+    color: 
+    rgb(255, 255, 255);
+    padding: 50px 20px;
+    text-align: center;
+     justify-content: center;
+     text-shadow: 
+        2px 2px 0px rgb(0, 0, 0), /* Horizontal and vertical shadow */
+        -2px -2px 0px rgb(0, 0, 0), /* Opposite shadow direction */
+        2px -2px 0px rgb(0, 0, 0), /* Other diagonal shadow */
+        -2px 2px 0px rgb(0, 0, 0); /* Another opposite diagonal */
+
+    }
+
+     
+
+#hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+hero p {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: flex-start; 
+    background-color: 
+    #fd78b6; 
+    padding: 10px;
+}
+
+nav a {
+    color: rgb(255, 255, 255); /* Make text visible */
+    text-decoration: none;
+    margin: 0 15px; /* Add space between links */
+    font-size: 20px;
+    text-shadow: 
+        2px 2px 0px rgb(0, 0, 0), /* Horizontal and vertical shadow */
+        -2px -2px 0px rgb(0, 0, 0), /* Opposite shadow direction */
+        2px -2px 0px rgb(0, 0, 0), /* Other diagonal shadow */
+        -2px 2px 0px rgb(0, 0, 0); /* Another opposite diagonal */
+
+}
+
+nav a:hover {
+    text-decoration: underline; /* Add hover effect */
+}
+
+/* Skills Section */
+#skills {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill-card-left{
+    width: 400px;
+    height: fit-content;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+.skill-card-right{
+    width: 700px;
+    height: fit-content;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.skill-card-right img {
+    width: 700px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.skill-card-left img {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.skill-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #fd78b6;;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+
+     .skill-card {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
